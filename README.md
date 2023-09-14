@@ -22,7 +22,8 @@ Python version
 Modify Line 15:
 
 ```executable = "BSOD.exe.malz"``` to ```"executable = "BSOD.exe"```
-*note this will cause it to BSOD on start up*
+
+*note this will cause it to BSOD on start up there is a very small window for deleting it*
 
 # Disclaimer
 This tool is intended for educational purposes and has been developed for troubleshooting the identification of BSOD (Blue Screen of Death) causes. Its usage for any illegal activities is strictly prohibited, as it is meant exclusively for educational purposes.
