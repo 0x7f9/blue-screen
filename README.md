@@ -2,7 +2,7 @@
 This project was inspired from a undocumented function in ntdll.dll.
 The function is based in C# but using ctypes python makes it possible  
 
-[document](https://www.pinvoke.net/default.aspx/ntdll/NtRaiseHandError.html)
+[document](https://www.pinvoke.net/default.aspx/ntdll/NtRaiseHandError.html) 
 Requires the SeShutdownPriviledge, otherwise will fail.
 Use RtlAdjustPrivilege with Privilege parameter 19 to enable SeShutdownPriviledge.
 ```
