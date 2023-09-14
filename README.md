@@ -1,8 +1,8 @@
 # Windows BSOD made in python
 This project was inspired from a undocumented function in ntdll.dll.
-The function is based in C# but using ctypes python makes it possible
+The function is based in C# but using ctypes python makes it possible  
 
-[document](https://www.pinvoke.net/default.aspx/ntdll/NtRaiseHandError.html)
+[document](https://www.pinvoke.net/default.aspx/ntdll/NtRaiseHandError.html)  
 
 Requires the SeShutdownPriviledge, otherwise will fail.
 Use RtlAdjustPrivilege with Privilege parameter 19 to enable SeShutdownPriviledge.
@@ -19,9 +19,9 @@ Python version
 - Removes itself from execution directory automatically
 
 # Restart prestance 
-Modify Line 15:
+Modify Line 15:  
 
-```executable = "BSOD.exe.malz"``` to ```"executable = "BSOD.exe"```
+```executable = "BSOD.exe.malz"``` to ```"executable = "BSOD.exe"```  
 
 *note this will cause it to BSOD on start up there is a very small window for deleting it*
 
