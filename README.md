@@ -1,5 +1,5 @@
 # Windows BSOD made in python
-This project was inspired from this document
+This project was inspired from a undocumented function in ntdll.dll.
 
 [document](https://www.pinvoke.net/default.aspx/ntdll/NtRaiseHandError.html)
 
