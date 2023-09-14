@@ -1,5 +1,6 @@
 # Windows BSOD made in python
-This project was inspired from this document 
+This project was inspired from this document
+
 [document](https://www.pinvoke.net/default.aspx/ntdll/NtRaiseHandError.html)
 
 Requires the SeShutdownPriviledge, otherwise will fail.
