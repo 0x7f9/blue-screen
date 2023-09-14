@@ -1,1 +1,23 @@
 # Windows BSOD made in python
+This project was inspired from this document 
+[document]([https://link-url-here.org](https://www.pinvoke.net/default.aspx/ntdll/NtRaiseHandError.html))
+
+Requires the SeShutdownPriviledge, otherwise will fail.
+Use RtlAdjustPrivilege with Privilege parameter 19 to enable SeShutdownPriviledge.
+```
+C# Sample Code:
+    Console.Write("Press any key to trigger a BSOD.");
+    Console.ReadKey();
+    RtlAdjustPrivilege(19, true, false, out bool previousValue);
+    NtRaiseHardError(0xC0000420, 0, 0, IntPtr.Zero, 6, out uint Response);
+```
+
+- Supports compiling using pyinstaller and Nuitka
+- Removes itself from execution directory automatically
+
+# Restart prestance 
+Modify on Line 15:
+```executable = "BSOD.exe.malz"``` to ```"executable = "BSOD.exe"```
+
+# Disclaimer
+This tool is intended for educational purposes and has been developed for troubleshooting the identification of BSOD (Blue Screen of Death) causes. Its usage for any illegal activities is strictly prohibited, as it is meant exclusively for educational purposes.
