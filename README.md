@@ -1,5 +1,6 @@
 # Windows BSOD made in python
 This project was inspired from a undocumented function in ntdll.dll.
+The function is based in C# but using ctypes python makes it possible
 
 [document](https://www.pinvoke.net/default.aspx/ntdll/NtRaiseHandError.html)
 
@@ -12,7 +13,7 @@ C# Sample Code:
     RtlAdjustPrivilege(19, true, false, out bool previousValue);
     NtRaiseHardError(0xC0000420, 0, 0, IntPtr.Zero, 6, out uint Response);
 ```
-
+Python version
 - Supports compiling using pyinstaller and Nuitka
 - Removes itself from execution directory automatically
 
