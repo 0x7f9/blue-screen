@@ -4,7 +4,7 @@ The function is based in C# but using ctypes python makes it possible
 
 [Link to undocumented function](https://www.pinvoke.net/default.aspx/ntdll/NtRaiseHandError.html) 
 
-```
+```c#
 C# Sample Code:
     Console.Write("Press any key to trigger a BSOD.");
     Console.ReadKey();
